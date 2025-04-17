@@ -293,7 +293,16 @@
       </div>
     </div>
   </footer>
+  <script>
+    window.addEventListener('load', () => {
+      const preloader = document.getElementById('preloader');
+      document.body.classList.add('loaded');
 
+      setTimeout(() => {
+        preloader.style.display = 'none';
+      }, 500);
+    });
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
